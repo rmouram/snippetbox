@@ -12,9 +12,10 @@ func (app *application) routes() http.Handler {
 
 	mux := pat.New()
 	mux.Get("/", http.HandlerFunc(app.home))
-	mux.Get("/snippet:id", http.HandlerFunc(app.showSnippet))
 	mux.Get("/snippet/create", http.HandlerFunc(app.createSnippetForm))
 	mux.Post("/snippet/create", http.HandlerFunc(app.createSnippet))
+	//para o get em /snippet/... funcionar o /snippet/:id precisa ficar abaixo das outras
+	mux.Get("/snippet/:id", http.HandlerFunc(app.showSnippet))
 
 	fileServe := http.FileServer(http.Dir("../../ui/static/"))
 	mux.Get("/static/", http.StripPrefix("/static", fileServe))

@@ -3,12 +3,15 @@ package main
 import (
 	"github.com/rmouram/snippetbox/pkg/models"
 	"html/template"
+	"net/url"
 	"path/filepath"
 	"time"
 )
 
 type templateData struct {
 	CurrentYear int
+	FormData url.Values
+	FormErrors map[string]string
 	Snippet *models.Snnipet
 	Snippets []*models.Snnipet
 }
