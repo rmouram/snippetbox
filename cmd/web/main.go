@@ -21,6 +21,7 @@ type application struct {
 	session *sessions.Session
 	snippets *mysql.SnippetModel
 	templateCache map[string]*template.Template
+	user *mysql.UserModel
 }
 
 func openDB(dns string) (*sql.DB, error){
@@ -64,6 +65,7 @@ func main() {
 		session: session,
 		snippets: &mysql.SnippetModel{DB: db},
 		templateCache: templateCache,
+		user: &mysql.UserModel{DB: db},
 	}
 
 	tlsConfig := &tls.Config{

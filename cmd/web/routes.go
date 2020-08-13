@@ -18,6 +18,12 @@ func (app *application) routes() http.Handler {
 	//para o get em /snippet/... funcionar o /snippet/:id precisa ficar abaixo das outras
 	mux.Get("/snippet/:id", dynamicMiddleware.ThenFunc(app.showSnippet))
 
+	mux.Get("/user/login", dynamicMiddleware.ThenFunc(app.loginUserForm))
+	mux.Post("/user/login", dynamicMiddleware.ThenFunc(app.loginUser))
+	mux.Get("/user/signup", dynamicMiddleware.ThenFunc(app.signupUserForm))
+	mux.Post("/user/signup", dynamicMiddleware.ThenFunc(app.signupUser))
+	mux.Post("/user/logout", dynamicMiddleware.ThenFunc(app.logoutUser))
+
 	fileServe := http.FileServer(http.Dir("../../ui/static/"))
 	mux.Get("/static/", http.StripPrefix("/static", fileServe))
 
