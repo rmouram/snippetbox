@@ -35,7 +35,9 @@ func (app *application) showSnippet(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	app.render(w, r, "show.page.tmpl", &templateData{Snippet: s})
+	app.render(w, r, "show.page.tmpl", &templateData{
+		Snippet: s,
+	})
 }
 
 func (app *application) createSnippetForm (w http.ResponseWriter, r *http.Request) {
@@ -53,6 +55,8 @@ func (app *application) createSnippet(w http.ResponseWriter, r *http.Request) {
 	form.Required("title", "content", "expires")
 	form.MaxLength("title", 100)
 	form.PermittedValues("expires", "365", "7", "1")
+
+	app.session.Put(r, "flash", "Snippet successfully created!")
 
 	if !form.Valid() {
 		app.render(w, r, "create.page.tmpl", &templateData{Form: form})

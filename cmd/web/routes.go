@@ -9,13 +9,14 @@ import (
 func (app *application) routes() http.Handler {
 
 	standardMiddleware := alice.New(app.recoverPanic, app.logRequest, secureHeaders)
+	dynamicMiddleware := alice.New(app.session.Enable)
 
 	mux := pat.New()
-	mux.Get("/", http.HandlerFunc(app.home))
-	mux.Get("/snippet/create", http.HandlerFunc(app.createSnippetForm))
-	mux.Post("/snippet/create", http.HandlerFunc(app.createSnippet))
+	mux.Get("/", dynamicMiddleware.ThenFunc(app.home))
+	mux.Get("/snippet/create", dynamicMiddleware.ThenFunc(app.createSnippetForm))
+	mux.Post("/snippet/create", dynamicMiddleware.ThenFunc(app.createSnippet))
 	//para o get em /snippet/... funcionar o /snippet/:id precisa ficar abaixo das outras
-	mux.Get("/snippet/:id", http.HandlerFunc(app.showSnippet))
+	mux.Get("/snippet/:id", dynamicMiddleware.ThenFunc(app.showSnippet))
 
 	fileServe := http.FileServer(http.Dir("../../ui/static/"))
 	mux.Get("/static/", http.StripPrefix("/static", fileServe))
