@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cfe0117b-2a1b-4ef7-bbd6-03e384e49a42" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cmd/web/handlers_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/web/middleware_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/web/templates_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/web/testutils_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/html/login.page.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/web/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/handlers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/web/helpers.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/helpers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/web/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/web/middleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/middleware.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/web/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/web/templates.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/templates.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/models/mysql/users.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/models/mysql/users.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/html/base.layout.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/ui/html/base.layout.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/html/create.page.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/ui/html/create.page.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/html/signup.page.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/ui/html/signup.page.tmpl" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1fe1RB8NhGd1AVDvulNQDYwrNiM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\snippetbox\cmd\web" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="snippetbox" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="425" y="158" key="#Go_Modules" timestamp="1596563753878">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="425" y="158" key="#Go_Modules/0.0.1366.728@0.0.1366.728" timestamp="1596563753878" />
+    <state x="0" y="190" key="#SQL_Dialects" timestamp="1596826785397">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="190" key="#SQL_Dialects/0.0.1366.728@0.0.1366.728" timestamp="1596826785397" />
+    <state x="373" y="147" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597253168876">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="373" y="147" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1597253168876" />
+    <state x="410" y="60" key="FileChooserDialogImpl" timestamp="1597945094807">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="410" y="60" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597945094807" />
+    <state width="1311" height="164" key="GridCell.Tab.0.bottom" timestamp="1596665568173">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="164" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596665568173" />
+    <state width="1311" height="164" key="GridCell.Tab.0.center" timestamp="1596665568172">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="164" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596665568172" />
+    <state width="1311" height="164" key="GridCell.Tab.0.left" timestamp="1596665568172">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="164" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596665568172" />
+    <state width="1311" height="164" key="GridCell.Tab.0.right" timestamp="1596665568172">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="164" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596665568172" />
+    <state x="321" y="52" width="723" height="664" key="find.popup" timestamp="1597956919569">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="321" y="52" width="723" height="664" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1597956919569" />
+  </component>
+</project>

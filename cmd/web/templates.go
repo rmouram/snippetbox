@@ -9,15 +9,22 @@ import (
 )
 
 type templateData struct {
+	AuthenticatedUser *models.User
 	CurrentYear int
-	Form *forms.Form
+	CSRFToken string
 	Flash string
+	Form *forms.Form
 	Snippet *models.Snnipet
 	Snippets []*models.Snnipet
+
 }
 
 func humanDate (t time.Time) string {
-	return t.Format("02 Jan 2006 at 15:04")
+	if t.IsZero() {
+		return ""
+	}
+
+	return t.UTC().Format("02 Jan 2006 at 15:04")
 }
 
 var functions = template.FuncMap{

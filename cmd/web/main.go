@@ -15,6 +15,10 @@ import (
 	"time"
 )
 
+type contextKey string
+
+var contextKeyUser = contextKey("user")
+
 type application struct {
 	infoLog *log.Logger
 	errorLog *log.Logger
@@ -46,7 +50,7 @@ func main() {
 
 	db, err := openDB(*dns)
 	if err != nil {
-		errorLog.Fatal(err)
+			errorLog.Fatal(err)
 	}
 	defer db.Close()
 
@@ -58,6 +62,7 @@ func main() {
 	session := sessions.New([]byte(*secret))
 	session.Lifetime = 12 * time.Hour
 	session.Secure = true
+	session.SameSite = http.SameSiteStrictMode
 
 	app := &application{
 		errorLog: errorLog,
